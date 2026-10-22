@@ -142,7 +142,7 @@ jobs:
       - name: SiegePal gate — report check run
         if: always()
         continue-on-error: true
-        uses: actions/github-script@v8
+        uses: actions/github-script@c7c8b2d82d9a4a1b9b0e9a9e3aef3b8e5a7a2c44
         env:
           SIEGEPAL_CHECK_CONCLUSION: "${{ steps.siegepal_gate.outputs.conclusion }}"
           SIEGEPAL_CHECK_SUMMARY: "${{ steps.siegepal_gate.outputs.summary }}"
